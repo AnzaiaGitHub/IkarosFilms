@@ -1,0 +1,111 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	/*rem*/
+	font-size: 15px;
+	/*Paleta de colores*/
+	--myRed:rgb(225,0,0);
+}
+
+body, html{
+	position: relative;
+}
+
+/*Encabezado*/
+	header{
+		height: 80vh;
+		width: 100%;
+		/*background: -webkit-linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),URL("./img/grabando.jpg");*/
+		background: linear-gradient(to bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.45)),URL("./img/grabando.jpg");
+		background-position: 0 -120px;
+		background-size: cover;
+		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	header section{
+		display: flex;
+		justify-content: center;
+		width: 40vw;
+		height: 20vh;
+	}
+	/*logo del header*/
+	.logo{
+		height: 100%;
+		width: auto;
+	}
+	/*listado de links en menu*/
+	.menu ul{
+		list-style: none;
+		text-align: center;
+		font-family: "Arial", sans-serif;
+		padding: 20px;
+	}
+	.menu li{
+		padding-top: 10px;
+	}
+	/*links del header*/
+	.menu-link{
+		text-decoration:none;
+		color:white;
+		font-size: 20px;
+		transition: 0.2s all;
+	}
+	.menu-link:hover{
+		color: var(--myRed);
+	}
+	.menu-link:active{
+		text-decoration: underline;
+	}
+/*Fin encabezado*/
+
+/*Contenido Principal*/
+	main{
+		width: 70vw;
+		margin-left: 15vw;
+	}
+	/*redes*/
+	.redes{
+		position: fixed;
+		left: 0;
+		top: 30%;
+		background-color: var(--myRed);
+		width: 60px;
+		height: auto;
+	}
+	.col{
+		width: 100%;
+		height: auto;
+	}
+	.red{
+		width: 100%;
+		height: auto;
+		padding:10px;
+		transition: 0.5s all; 
+	}
+	.red .red-icon{
+		fill: white;
+		transition: 0.5s all;
+	}
+	.red:hover .red-icon{
+		fill: black;
+	}
+	.red:hover{
+		padding: 7px;
+	}
+	/*fin redes*/
+
+	/*descripción*/
+	h1{
+		font-family: "Calibri", sans-serif;
+	}
+	p{
+		font-size: 20px;
+	}
+/*fin Contenido Principal*/
