@@ -7,22 +7,20 @@
 	<title>Ikaros films</title>
 </head>
 <body>
-	<header class="header">
-		<div>
-			<section>
-				<img src="img/logoblanco.png" alt="Logo de Ikaros Films" class="logo">
-			</section>
-			<section class="menu">
-				<ul>
-					<li><a href="index.html" class="menu-link">INICIO</a></li>
-					<li><a href="portafolio.html" class="menu-link">PORTAFOLIO</a></li>
-					<li><a href="contacto.html" class="menu-link">CONTACTO</a></li>
-				</ul>
-			</section>
-		</div>
+	<header class="navbar">
+		<img src="img/logoblanco.png" alt="Logo de Ikaros Films">
+		<nav>
+			<ul>
+				<li class="nav-link"><a href="index.html">INICIO</a></li>
+				<li class="nav-link"><a href="portafolio.html">PORTAFOLIO</a></li>
+				<li class="nav-link"><a class="activo" href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	<main>
+	<main class="main-contacto">
+		<section class="contacto-imagen">
+		</section>
 		<section class="redes">
 			<div class="col">
 				<!-- Facebook -->
@@ -63,12 +61,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="descripcion">
-			<h1>Nuestra misión es realizar la producción perfecta para tus requerimientos</h1>
-			<p>Ya sea que necesites un video para potenciar tu marca, vender un producto, crear contenido en redes sociales o impulsar tu carrera musical, has llegado al lugar correcto. Déjanos saber qué es lo que estas buscando y descubre por qué nuestros clientes nos aman.</p>
-		</section>
-		<section class="reel">
-			<iframe src="https://www.youtube-nocookie.com/embed/4J-0bKiMH3I?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<section class="formulario">
+			<form action="" method="">
+				<label for="nombre">Nombres*</label>
+				<input type="text" name="nombre">
+			</form>
 		</section>
 	</main>
 
