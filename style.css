@@ -19,12 +19,11 @@ body, html{
 }
 
 /*Optimizado para PC*/
-@media only screen and (min-width: 851px){
+@media only screen and (min-width: 701px){
 	/*Encabezado*/
 		.header{
 			height: 80vh;
 			width: 100%;
-			/*background: -webkit-linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),URL("./img/grabando.jpg");*/
 			background: linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.5)),URL("./img/grabando.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -181,9 +180,15 @@ body, html{
 				font-size: 1.33rem;
 				transition: 0.2s all;
 			}
-			.nav-link .activo{color: gray;}
-			.nav-link:hover{background-color: var(--myRed);}
-			.nav-link:active{text-decoration: line-through;}
+			.nav-link .activo{
+				color: gray;
+			}
+			.nav-link:hover{
+				background-color: var(--myRed);
+			}
+			.nav-link:active{
+				text-decoration: line-through;
+			}
 		/*fin navbar*/
 		/*contenido del portafolio*/
 			.main-portafolio{margin-top: 8rem;}
@@ -264,7 +269,7 @@ body, html{
 /*fin contenido para pc*/
 
 /*Optimizado para smarthpones*/
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 700px){
 	/*Encabezado*/
 		.header{
 			height: 60vh;
@@ -295,7 +300,7 @@ body, html{
 			list-style: none;
 			text-align: center;
 			font-family: "ROBOTO", sans-serif;
-			padding: 40px;
+			padding: 10px;
 		}
 		.menu li{
 			padding-top: 10px;
@@ -304,7 +309,7 @@ body, html{
 		.menu-link{
 			text-decoration:none;
 			color:white;
-			font-size: 4rem;
+			font-size: 1.5rem;
 			transition: 0.2s all;
 		}
 		.menu-link:hover{
@@ -323,9 +328,9 @@ body, html{
 			.redes{
 				position: fixed;
 				left: 0;
-				top: 40%;
+				top: 35%;
 				background-color: var(--myRed);
-				width: 100px;
+				width: 40px;
 				height: auto;
 				z-index: 1;
 			}
@@ -336,7 +341,7 @@ body, html{
 			.red{
 				width: 100%;
 				height: auto;
-				padding:15px;
+				padding:7px;
 				transition: 0.5s all; 
 			}
 			.red .red-icon{
@@ -354,18 +359,18 @@ body, html{
 		/*descripción*/
 			.descripcion{
 				background-color: rgba(50,50,50,1);
-				padding: 10vh 12vw;
+				padding: 6vh 14vw;
 				text-align: center;
 			}
 			.descripcion h1{
 				font-family: "Montserrat", sans-serif;
-				font-size: 1.4rem;
+				font-size: 1.2rem;
 				color: white;
 				font-weight: bold;
 			}
 			.descripcion p{
 				padding-top: 2rem;
-				font-size: 0.8rem;
+				font-size: .8rem;
 				font-family: "Montserrat", sans-serif;
 				color: white;
 			}
@@ -373,7 +378,7 @@ body, html{
 		/*Reel*/
 			.reel{
 				width: 100%;
-				height: 50vh;
+				height: 35vh;
 			}
 			.reel iframe, .reel video{
 				width: 100%;
@@ -382,7 +387,7 @@ body, html{
 		/*Fin Reel*/
 		/*PORTAFOLIO Navbar*/
 			.navbar{
-				height: 10rem;
+				height: 5rem;
 				width: 100%;
 				background-color: rgba(20,20,20,1);
 				position: fixed;
@@ -395,12 +400,12 @@ body, html{
 				/*border: 1px solid white;*/
 			}
 			.navbar img{
-				height: 70%;
+				height: 50%;
 				width: auto;
-				margin: 1.5rem;
+				margin: 1rem;
 			}
 			.navbar nav{
-				margin: 1.5rem;
+				margin: 1rem;
 				height: 100%;
 			}
 			.navbar ul{
@@ -411,7 +416,7 @@ body, html{
 				list-style: none;
 			}
 			.navbar li{
-				padding: 1rem;
+				padding: .3rem;
 				transition: 0.4s all;
 				display: flex;
 				align-items: center;
@@ -423,7 +428,8 @@ body, html{
 				text-decoration:none;
 				font-family: "ROBOTO", sans-serif;
 				color:white;
-				font-size: 2.6rem;
+				font-size: .65rem;
+				font-weight: bold;
 				transition: 0.2s all;
 			}
 			.nav-link .activo{color: gray;}
@@ -432,7 +438,7 @@ body, html{
 		/*fin navbar*/
 		/*contenido del portafolio*/
 			.main-portafolio{
-				margin-top: 12rem;
+				margin-top: 6.5rem;
 				display: flex;
 				justify-content: center;
 			}
@@ -444,29 +450,25 @@ body, html{
 			}
 			.portafolio h1{
 				font-family: "Montserrat", sans-serif;
-				font-size: 4rem;
+				font-size: 1.5rem;
 				color: black;
 				font-weight: bold;
 			}
 			.malla{
-				margin: 0 10rem;
+				margin: 0 2rem;
 				width: auto;
 				display: flex;
-				justify-content: center;
 				flex-wrap: wrap;
 				overflow: hidden;
 				background-color: rgba(255,255,255,0.5);
-				/*padding: 1rem;*/
-				/*border: 1px solid red;*/
 			}
 			.clip{
-				width: 20rem;
-				height: 20rem;
+				width: 8rem;
+				height: 8rem;
 				margin: 0.2rem 0.2rem;
 				overflow: hidden;
 				position: relative;
 				cursor: pointer;
-				/*border: 0.5px solid black;*/
 			}
 			.clip img{
 				width: 100%;
